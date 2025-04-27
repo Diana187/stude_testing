@@ -14,20 +14,20 @@
 # Формат вывода
 # Выходной файл должен содержать единственное число — количество камней, являющихся драгоценностями.
 
-import sys
+# import sys
 
-J = sys.stdin.readline()
-S = sys.stdin.readline()
+# J = sys.stdin.readline()
+# S = sys.stdin.readline()
 
-count_jewels = 0
+# count_jewels = 0
 
-for c in S:
-    if c in J:
-        count_jewels += 1
+# for c in S:
+#     if c in J:
+#         count_jewels += 1
 
-print(count_jewels)
+# print(count_jewels)
 
-# or
+# # or
 
 jewels = input().strip()
 stones = input().strip()
@@ -41,3 +41,17 @@ count = sum(ch in jewel_set for ch in stones)
 #         count += 1
 
 print(count)
+
+
+# # с тестами
+# def count_jewels(jewels: str, stones: str) -> int:
+#     jewel_set = set(jewels)
+#     return sum(ch in jewel_set for ch in stones)
+
+
+# assert count_jewels("a", "aAa") == 2
+# assert count_jewels("ab", "aabbccd") == 4
+# assert count_jewels("", "abc") == 0
+# assert count_jewels("abc", "") == 0
+
+# print("✓ All tests passed")
