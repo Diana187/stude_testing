@@ -26,3 +26,18 @@ for c in S:
         count_jewels += 1
 
 print(count_jewels)
+
+# or
+
+jewels = input().strip()
+stones = input().strip()
+
+jewel_set = set(jewels)
+count = sum(ch in jewel_set for ch in stones)
+
+# count = 0
+# for char in stones:
+#     if char in jewel_set:
+#         count += 1
+
+print(count)

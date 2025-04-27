@@ -9,3 +9,8 @@ line = sys.stdin.readline()
 
 a, b = map(int, line.split())
 sys.stdout.write(f"{a + b}\n")
+
+# or
+a, b = map(int, input().split())
+
+print(a + b)
